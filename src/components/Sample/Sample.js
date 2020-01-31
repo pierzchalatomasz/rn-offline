@@ -23,16 +23,20 @@ class Sample extends React.Component {
           : null
         }
 
-        <Button onPress={this.fetchData} title="Fetch" />
+        <Button testID="fetchButton" onPress={this.fetchData} title="Fetch" />
 
-        {loading && <Text>Loading...</Text>}
+        {loading && <Text testID="loadTestLabel">Loading...</Text>}
 
-        {data && data.map(item => (
-          <View key={item.id} style={styles.item}>
-            <Image source={{ uri: item.avatar }} style={styles.avatar}/>
-            <Text>{item.name}</Text>
+        {data && (
+          <View testID="dataList">
+            {data.map(item => (
+              <View key={item.id} style={styles.item}>
+                <Image source={{ uri: item.avatar }} style={styles.avatar}/>
+                <Text>{item.name}</Text>
+              </View>
+            ))}
           </View>
-        ))}
+        )}
       </ScrollView>
     );
   }

@@ -27,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* RNOfflineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNOfflineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNOfflineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNOfflineTests.m; sourceTree = "<group>"; };
@@ -40,14 +39,8 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNOffline/main.m; sourceTree = "<group>"; };
 		26E0B6EC05F04B83D43A603D /* libPods-RNOfflineTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNOfflineTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C23C0AF02DEC88FBBFE0670 /* Pods-RNOfflineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOfflineTests.release.xcconfig"; path = "Target Support Files/Pods-RNOfflineTests/Pods-RNOfflineTests.release.xcconfig"; sourceTree = "<group>"; };
-		2D0ED845BBCB766DADDD03D9 /* Pods-RNOffline-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOffline-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RNOffline-tvOSTests/Pods-RNOffline-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		442B3554CE23CAEFEA5CB669 /* Pods-RNOffline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOffline.release.xcconfig"; path = "Target Support Files/Pods-RNOffline/Pods-RNOffline.release.xcconfig"; sourceTree = "<group>"; };
-		5162C491F456445B778313CD /* Pods-RNOffline-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOffline-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RNOffline-tvOS/Pods-RNOffline-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		91D6F61E15264D227FE8AB5B /* libPods-RNOffline-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNOffline-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95B0872E391B8E15B8BF8BE /* libPods-RNOffline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNOffline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD26C531E15375AA71D6447A /* libPods-RNOffline-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNOffline-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D224576E0917A80F57F3AE49 /* Pods-RNOffline-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOffline-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RNOffline-tvOS/Pods-RNOffline-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		E6B0D6C6F2DE4504BBA30F36 /* Pods-RNOffline-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOffline-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNOffline-tvOSTests/Pods-RNOffline-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E891FFD2CE023BC79FB84A5D /* Pods-RNOfflineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNOfflineTests.debug.xcconfig"; path = "Target Support Files/Pods-RNOfflineTests/Pods-RNOfflineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -94,7 +87,6 @@
 		13B07FAE1A68108700A75B9A /* RNOffline */ = {
 			isa = PBXGroup;
 			children = (
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -111,8 +103,6 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				A95B0872E391B8E15B8BF8BE /* libPods-RNOffline.a */,
-				91D6F61E15264D227FE8AB5B /* libPods-RNOffline-tvOS.a */,
-				BD26C531E15375AA71D6447A /* libPods-RNOffline-tvOSTests.a */,
 				26E0B6EC05F04B83D43A603D /* libPods-RNOfflineTests.a */,
 			);
 			name = Frameworks;
@@ -154,10 +144,6 @@
 			children = (
 				F43AA8DBAFA7E3D91A6B8FD1 /* Pods-RNOffline.debug.xcconfig */,
 				442B3554CE23CAEFEA5CB669 /* Pods-RNOffline.release.xcconfig */,
-				5162C491F456445B778313CD /* Pods-RNOffline-tvOS.debug.xcconfig */,
-				D224576E0917A80F57F3AE49 /* Pods-RNOffline-tvOS.release.xcconfig */,
-				E6B0D6C6F2DE4504BBA30F36 /* Pods-RNOffline-tvOSTests.debug.xcconfig */,
-				2D0ED845BBCB766DADDD03D9 /* Pods-RNOffline-tvOSTests.release.xcconfig */,
 				E891FFD2CE023BC79FB84A5D /* Pods-RNOfflineTests.debug.xcconfig */,
 				2C23C0AF02DEC88FBBFE0670 /* Pods-RNOfflineTests.release.xcconfig */,
 			);

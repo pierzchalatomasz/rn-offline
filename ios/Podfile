@@ -41,13 +41,3 @@ target 'RNOffline' do
 
   use_native_modules!
 end
-
-target 'RNOffline-tvOS' do
-  # Pods for RNOffline-tvOS
-
-  target 'RNOffline-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end

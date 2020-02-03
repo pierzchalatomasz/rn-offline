@@ -1,12 +1,12 @@
+import 'react-native-gesture-handler';
 import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { ReduxNetworkProvider } from 'react-native-offline';
 import SplashScreen from 'react-native-splash-screen';
 
+import AppNavigator from './src/navigation/AppNavigator';
 import configureStore from './configureStore';
-import Sample from './src/components/Sample/Sample';
-
 
 const { store, persistor } = configureStore();
 
@@ -22,7 +22,7 @@ const App = () => {
         pingServerUrl="https://www.google.com/"
       >
         <PersistGate loading={null} persistor={persistor}>
-          <Sample />
+          <AppNavigator />
         </PersistGate>
       </ReduxNetworkProvider>
     </Provider>

@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, ScrollView, Image, Button } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { NetworkConsumer } from 'react-native-offline';
 
 import { sampleFetch } from '../../actions/sample';
 
@@ -10,7 +9,7 @@ import styles from './Sample.styles';
 
 class Sample extends React.Component {
   fetchData = () => {
-    this.props.sampleFetch();
+    this.props.sampleFetch('https://5e329d59b92d240014ea545c.mockapi.io/user');
   };
 
   render() {

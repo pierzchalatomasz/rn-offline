@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest --testPathPattern=\"^((?!e2e).)*$\"",
+    "test": "jest --testPathPattern=\"^((?!e2e).)*$\" --verbose",
     "lint": "eslint .",
     "e2e:ios": "detox build -c ios.sim.release && detox test -c ios.sim.release",
     "e2e:android": "detox build -c android.emu.release && detox test -c android.emu.release"

@@ -1,4 +1,4 @@
-import { SAMPLE_FETCH_SUCCESS, SAMPLE_FETCH } from '../actions/sample';
+import { SAMPLE_FETCH_SUCCESS, SAMPLE_FETCH } from '../../actions/sample/sample';
 
 const initialState = {
   data: null,

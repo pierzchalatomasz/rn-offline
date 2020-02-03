@@ -14,16 +14,18 @@ export const sampleFetchError = data => ({
   data,
 });
 
-export const sampleFetch = () => retriableAction(
-  dispatch => {
+export const sampleFetch = retriableAction(
+  'sampleFetch',
+  url => dispatch => {
     dispatch({
       type: SAMPLE_FETCH,
     });
 
-    return fetch('https://5e329d59b92d240014ea545c.mockapi.io/user')
+    return fetch(url)
       .then(res => res.json())
       .then(
         data => dispatch(sampleFetchSuccess(data)),
         error => sampleFetchError(error),
       );
-  });
+  },
+);

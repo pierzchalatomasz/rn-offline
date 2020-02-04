@@ -9,3 +9,7 @@ export const createReducer = () => (state = {
 export const createNetworkMiddleware = () => () => next => action => {
   next(action);
 };
+
+export const offlineActionTypes = {
+  FETCH_OFFLINE_MODE: 'FETCH_OFFLINE_MODE',
+};

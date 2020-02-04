@@ -9,6 +9,7 @@ describe('sample reducer', () => {
       {
         data: null,
         loading: false,
+        notification: 0,
       },
     );
   });

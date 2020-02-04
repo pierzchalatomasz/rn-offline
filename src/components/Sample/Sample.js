@@ -3,7 +3,7 @@ import { View, Text, ScrollView, Image, Button } from 'react-native';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import { sampleFetch } from '../../actions/sample';
+import { sampleFetch } from '../../actions/sample/sample';
 
 import styles from './Sample.styles';
 
@@ -64,5 +64,7 @@ const mapStateToProps = state => ({
 const bindActions = {
   sampleFetch,
 };
+
+export const PureSample = Sample;
 
 export default connect(mapStateToProps, bindActions)(Sample);

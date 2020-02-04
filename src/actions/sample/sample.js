@@ -1,4 +1,4 @@
-import { retriableAction } from '../utils/network';
+import { retriableAction } from '../../utils/network';
 
 export const SAMPLE_FETCH = 'SAMPLE_FETCH';
 export const SAMPLE_FETCH_SUCCESS = 'SAMPLE_FETCH_SUCCESS';

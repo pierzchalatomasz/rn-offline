@@ -1,4 +1,4 @@
-import * as sampleActions from './sample';
+import * as sampleActions from './sample/sample';
 
 export default {
   ...sampleActions,

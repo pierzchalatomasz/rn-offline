@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { createReducer as createNetworkReducer } from 'react-native-offline';
 
-import sampleReducer from './sample';
+import sampleReducer from './sample/sample';
 
 const rootReducer = combineReducers({
   sample: sampleReducer,

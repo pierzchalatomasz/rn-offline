@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button, ScrollView } from 'react-native';
+import { View, Button } from 'react-native';
 
 import Sample from '../components/Sample/Sample';
 
@@ -10,14 +10,12 @@ class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View>
-        <ScrollView>
-          <Sample />
-          <Button
-            title="Go to Details"
-            onPress={this.goToDetailsScreen}
-          />
-        </ScrollView>
+      <View style={{ flex: 1 }}>
+        <Sample />
+        <Button
+          title="Go to Details"
+          onPress={this.goToDetailsScreen}
+        />
       </View>
     );
   }

@@ -20,6 +20,8 @@ const App = () => {
       <ReduxNetworkProvider
         pingTimeout={10000}
         pingServerUrl="https://www.google.com/"
+        pingInBackground
+        shouldPing
       >
         <PersistGate loading={null} persistor={persistor}>
           <AppNavigator />

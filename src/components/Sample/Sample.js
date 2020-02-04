@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { sampleFetch } from '../../actions/sample/sample';
+import Toast from '../Toast/Toast';
 
 import styles from './Sample.styles';
 
@@ -13,10 +14,12 @@ class Sample extends React.Component {
   };
 
   render() {
-    const { data, loading, isConnected } = this.props;
+    const { data, loading, isConnected, notification } = this.props;
 
     return (
       <ScrollView contentContainerStyle={styles.container}>
+        <Toast notification={notification} />
+
         {!isConnected
           ? <Text>You are offline!</Text>
           : null
@@ -53,12 +56,14 @@ Sample.propTypes = {
   ),
   loading: PropTypes.bool.isRequired,
   isConnected: PropTypes.bool.isRequired,
+  notification: PropTypes.number,
 };
 
 const mapStateToProps = state => ({
   data: state.sample.data,
   loading: state.sample.loading,
   isConnected: state.network.isConnected,
+  notification: state.sample.notification,
 });
 
 const bindActions = {
